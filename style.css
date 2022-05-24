@@ -1,0 +1,93 @@
+* {
+    font-family: monospace;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.conjunto-platos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: xxx-large;
+    font-weight: 100;
+    font-family: cursive;
+    margin: 1.5em;
+    height: 0;
+}
+
+.platos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.plato-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    width: 15em;
+    height: 25em;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(148,148,148,1);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(148,148,148,1);
+    box-shadow: 5px 5px 10px 0px rgba(148,148,148,1);
+}
+
+.plato-div-imagen {
+    height: 12em;
+}
+
+.imagen-plato {
+    width: 15em;
+    height: 12em;
+}
+
+.bebidas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.conjunto-bebidas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.carrito {
+    width: 10em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    border-radius: 10px 0px 0px 0px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(84 83 83);
+    color: white;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(148,148,148,1);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(148,148,148,1);
+    box-shadow: 5px 5px 10px 0px rgba(148,148,148,1);
+    transition: 1s;
+}
+
+.seccion-carrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

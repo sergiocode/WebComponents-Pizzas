@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components</title>
+    <script type="module" src="/components/plato.js"></script>
+    <script type="module" src="/components/platos.js"></script>
+    <script type="module" src="/components/bebidas.js"></script>
+    <script type="module" src="/components/bebida.js"></script>
+    <script type="module" src="/components/carrito.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <platos-element></platos-element>
+        <bebidas-element></bebidas-element>
+    </div>
+    <carrito-element></carrito-element>
+    <script>
+        function sumarPrecios() {
+            let precioPizzas = document.querySelector('.precioPizzas');
+            let pizzasParsed = parseFloat(precioPizzas.innerHTML);
+
+            let precioBebida = document.querySelector('.precioBebidas');
+            let bebidaParsed = parseFloat(precioBebida.innerHTML);
+
+            return pizzasParsed + bebidaParsed;
+        }
+
+        function mostrarPrecio(sumarPrecios) {
+            let precioCarrito = document.querySelector('.precioCarrito');
+            precioCarrito.innerHTML = sumarPrecios + " €";
+        }
+    </script>
+</body>
+
+</html>
